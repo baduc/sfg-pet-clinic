@@ -1,4 +1,4 @@
-package com.bidi.springguru.sfgpetclinic.model;
+package com.bidi.springguru.model;
 
 import java.time.LocalDate;
 
