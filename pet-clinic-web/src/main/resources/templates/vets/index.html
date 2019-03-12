@@ -5,6 +5,21 @@
     <title>List of Vets</title>
 </head>
 <body>
+    <!--/*@thymesVar id="vet" type="com.bidi.springguru.model.Vet"*/-->
     <h1 th:text="'List of Vets'">List of Vets</h1>
+    <table>
+        <thead>
+        <tr>Id</tr>
+        <tr>First Name</tr>
+        <tr>Last Name</tr>
+        </thead>
+        <tbody>
+        <tr th:each="vet : ${vets}">
+            <td th:text="${vet.id}">Id</td>
+            <td th:text="${vet.firstName}">First Name</td>
+            <td th:text="${vet.lastName}">Last Name</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

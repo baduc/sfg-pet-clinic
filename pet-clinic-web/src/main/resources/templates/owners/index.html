@@ -5,7 +5,8 @@
     <title>List of Owners</title>
 </head>
 <body>
-    <h1 th:text="'List of Owners'">List of Vets</h1>
+<!--/*@thymesVar id="owner" type="com.bidi.springguru.model.Owner"*/-->
+    <h1 th:text="'List of Owners'">List of Owners</h1>
     <table>
         <thead>
             <tr>Id</tr>
@@ -18,9 +19,7 @@
             <td th:text="${owner.firstName}">First Name</td>
             <td th:text="${owner.lastName}">Last Name</td>
         </tr>
-
         </tbody>
-
     </table>
 </body>
 </html>
