@@ -1,11 +1,11 @@
 package com.bidi.springguru.services.map;
 
 import com.bidi.springguru.model.Vet;
-import com.bidi.springguru.services.CrudService;
+import com.bidi.springguru.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
